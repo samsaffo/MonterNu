@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MonteraNu – Snabb & pålitlig handyman i Stockholm. Vi hjälper dig med TV-montering, IKEA-möbler, borrning, installationer och små snickerijobb. Boka enkelt via telefon, WhatsApp eller Mejl.">
+    <link rel="shortcut icon" href="img/logo_monteranu.png" type="image/x-icon">
+
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>MonteraNu – Handyman i Stockholm</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-md fixed w-full top-0 left-0 z-20" >
+        <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+            <div style="background-image: url(img/namn_montera-c.png); width: 600px; height: 50px; background-size: contain; background-repeat: no-repeat;">
+            </div>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#tjanster" class="hover:text-blue-600">Tjänster</a>
+                <a href="#varfor" class="hover:text-blue-600">Varför oss?</a>
+                <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class=" head_style pt-32 pb-20 bg-blue-600 text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold mb-4">Snabb & pålitlig handyman i Stockholm</h2>
+            <p class="text-lg mb-6">Vi hjälper dig med TV-montering, möbler, hemfix, lättare el, installationer och mycket mer.</p>
+
+            <a href="#kontakt" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100">
+                Boka tid
+            </a>
+        </div>
+    </section>
+
+    <!-- TJÄNSTER -->
+    <section id="tjanster" class="max-w-6xl mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">Våra tjänster</h2>
+        <section id="tjanster" class="max-w-6xl mx-auto py-16 px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Example service card -->
+                <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer service-card" 
+                    data-title="📺 TV-montering" 
+                    data-price="Från 299kr"
+                    data-subcategories='[
+                        {"name":"Montera TV på vägg","price":"Från 499kr"},
+                        {"name":"Gömma kablar","price":"Från 299kr"},
+                        {"name":"Soundbar-montering","price":"Från 399kr"},
+                        {"name":"Projektor-montering","price":"Från 599kr"},
+                        {"name":"TV-bänk montering","price":"Från 399kr"},
+                        {"name":"Väggfäste för TV","price":"Från 399kr"},
+                        {"name":"Kalibrering av TV","price":"Från 299kr"},
+                        {"name":"Anslutning av enheter","price":"Från 299kr"},
+                        {"name":"Smart TV installation","price":"Från 299kr"},
+                        {"name":"TV-väggfäste köp och montering","price":"Från 899kr"}
+                    ]'>
+                    <img src="img/tv.jpg" alt="tv_mount">
+                    <h3 class="text-xl font-bold mb-2">📺 TV-montering</h3>
+                    <p class="text-gray-700 font-semibold">Från 499kr</p>
+                </div>
+
+            <!-- Möbler & montering -->
+            <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer service-card" 
+                data-title="🛠️ Möbler & montering" 
+                data-price="Från 299kr"
+                data-subcategories='[
+                    {"name":"IKEA-möbler montering/Assembly","price":"Från 299kr"},
+                    {"name":"Bord & stolar","price":"Från 199kr/st"},
+                    {"name":"Skrivbord & hyllor","price":"Från 249kr/st"},
+                    {"name":"Garderober & förvaring","price":"Från 499kr"},
+                    {"name":"Sängar & sängramar","price":"Från 599kr"},
+                    {"name":"TV-bänkar & mediabänkar","price":"Från 399kr"},
+                    {"name":"Skåp & byråer","price":"Från 499kr"},
+                    {"name":"Utemöbler","price":"Från 299kr"}
+                ]'>
+                <img src="img/skåp2.jpg" alt="Möbel Montering" class="rounded-xl mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">🛠️ Möbler & montering</h3>
+                <p class="text-gray-700 font-semibold">Från 299kr</p>
+            </div>
+
+            <!-- Hemfix -->
+            <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer service-card" 
+                data-title="🔧 Hemfix" 
+                data-price="Från 99kr"
+                data-subcategories='[
+                    {"name":"Montera krokar","price":"Från 99kr"},
+                    {"name":"Montera/fixa lister","price":"Från 299kr"}
+                    {"name":"Gardinskena/stommar","price":"Från 499kr"},
+                    {"name":"Småreparationer","price":"Från 199kr"}
+                ]'>
+                <img src="img/hemfix.jpg" alt="Hemfix" class="rounded-xl mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">🔧 Hemfix</h3>
+                <p class="text-gray-700 font-semibold">Från 199kr</p>
+            </div>
+
+            <!-- Lätta eljobb -->
+            <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer service-card" 
+                data-title="🔌 eljobb" 
+                data-price="Från 299kr"
+                data-subcategories='[
+                    {"name":"Byta lampknapp","price":"Från 299kr"},
+                    {"name":"Taklampa","price":"Från 399kr"},
+                    {"name":"Vägguttag","price":"Från 399kr"},
+                    {"name":"koppla diskmaskin","price":"Från 499kr"},
+                    {"name":"koppla torkrumlare","price":"Från 499kr"},
+                    {"name":"koppla tvättmaskin","price":"Från 499kr"},
+                    {"name":"koppla ugn","price":"Från 399kr"},
+                    {"name":"Dimmer","price":"Från 299kr"}
+                ]'>
+                <img src="img/elektrik.jpg" alt="Eljobb" class="rounded-xl mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">🔌 Eljobb</h3>
+                <p class="text-gray-700 font-semibold">Från 299kr</p>
+            </div>
+
+            <!-- Installationer -->
+            <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer service-card" 
+                data-title="Gardiner/Smarta hem" 
+                data-price="Från 249kr"
+                data-subcategories='[
+                    {"name":"Installera Rullgardiner","price":"Från 499kr"},
+                    {"name":"Montera Gardinskena/stommar inkl borning","price":"Från 399kr"},
+                    {"name":"Installation av Sensorer & smarta hem","price":"Från 349kr"}
+                ]'>
+                <img src="img/curtains.jpg" alt="Installationer" class="rounded-xl mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">Gardiner/Smarta hem</h3>
+                <p class="text-gray-700 font-semibold">Från 249kr</p>
+            </div>
+
+            <!-- Snickeri -->
+            <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition cursor-pointer service-card" 
+                data-title="🏡 Snickeri" 
+                data-price="Från 249kr"
+                data-subcategories='[
+                    {"name":"Panel","price":"Från 399kr"},
+                    {"name":"Små lagningar","price":"Från 249kr"},
+                    {"name":"Altanfix","price":"Från 299kr"},
+                    {"name":"Bygga Bokhyllor","price":"Från 1500kr"},
+                    {"name":"Bygga skåp","price":"Från 1499kr"},
+                    {"name":"Tacklistor/design","price":"Från 1099kr"},
+                    {"name":"Dörr/byten","price":"Från 499kr/st"}
+                ]'>
+                <img src="img/wood.jpg" alt="Snickeri" class="rounded-xl mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mb-2">🏡 Snickeri</h3>
+                <p class="text-gray-700 font-semibold">Från 199kr</p>
+            </div>
+            </div>
+
+            <!-- Modal / Expanded view -->
+            <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                <div class="bg-white rounded-xl p-6 w-11/12 md:w-2/3 lg:w-1/2 relative">
+                    <button id="modal-close" class="back_button absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl font-bold">x</button>
+                    <h3 id="modal-title" class="text-2xl font-bold mb-4"></h3>
+                    <p id="modal-price" class="mb-4 font-semibold"></p>
+                    <ul id="modal-subcategories" class="list-disc pl-5 space-y-2"></ul>
+                </div>
+            </div>
+
+        </section>
+
+        <script>
+            const serviceCards = document.querySelectorAll('.service-card');
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalPrice = document.getElementById('modal-price');
+            const modalSubcategories = document.getElementById('modal-subcategories');
+            const modalClose = document.getElementById('modal-close');
+
+            serviceCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    modalTitle.textContent = card.dataset.title;
+                    modalPrice.textContent = card.dataset.price;
+
+                    // Clear previous subcategories
+                    modalSubcategories.innerHTML = '';
+
+                    // Add new subcategories
+                    const subs = JSON.parse(card.dataset.subcategories);
+                    subs.forEach(sub => {
+                        const li = document.createElement('li');
+                        li.textContent = `${sub.name} – ${sub.price}`;
+                        modalSubcategories.appendChild(li);
+                    });
+
+                    modal.classList.remove('hidden');
+                });
+            });
+
+            modalClose.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+
+            // Optional: close modal when clicking outside content
+            modal.addEventListener('click', (e) => {
+                if(e.target === modal) modal.classList.add('hidden');
+            });
+        </script>
+
+    <section id="tidigare tjänster" class="max-w-6xl mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">Tidigare utförda tjänster</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img1.jpg" alt="Tidigare tjänst 1" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img2.jpg" alt="Tidigare tjänst 2" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img3.jpg" alt="Tidigare tjänst 3" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img4.jpg" alt="Tidigare tjänst 3" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img5.jpg" alt="Tidigare tjänst 3" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img6.jpg" alt="Tidigare tjänst 3" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img7.jpg" alt="Tidigare tjänst 3" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+            <div class="bg-white rounded-xl shadow p-4">
+                <img src="img/img8.jpg" alt="Tidigare tjänst 3" class="rounded-xl mb-4 w-full h-48 object-cover">
+            </div>
+        </div>
+    </section>
+    </section>
+    <!-- VARFÖR OSS -->
+    <section id="varfor" class="bg-white py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center">Varför välja oss?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-xl p-6 text-center shadow">
+                    <h3 class="text-xl font-bold mb-2">⭐ Erfarenhet</h3>
+                    <p>Vi har många års erfarenhet av montering, el och hemfix.</p>
+                </div>
+                <div class="bg-gray-100 rounded-xl p-6 text-center shadow">
+                    <h3 class="text-xl font-bold mb-2">⚡ Snabb service</h3>
+                    <p>Vi kommer snabbt och löser ditt problem effektivt.</p>
+                </div>
+                <div class="bg-gray-100 rounded-xl p-6 text-center shadow">
+                    <h3 class="text-xl font-bold mb-2">💰 Rimliga priser</h3>
+                    <p>Transparenta priser, inga dolda avgifter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" style="background-color: cornflowerblue;">
+        <div class="max-w-4xl mx-auto text-center py-16 px-4">
+            <h2 class="text-3xl font-bold mb-6">Kontakta oss</h2>
+            <p class="mb-6">Mejla det du vill göra, gärna infoga bilder så återkommer vi inom kort(max 1-2 timmar) <br>
+                För att få snabbare hjälp meddela via whatsapp chatten (öppetider 24/7)</p>
+            <p class="mb-6">Telefon öppentider:</p>
+            <p class="mb-6">Måndag - Fredag: 08:00 - 20:00<br>
+            Lördag - Söndag: 8:00 - 18:00</p>
+
+            <div class="space-y-2">
+                <p><strong>📞 Telefon/Whatsapp:</strong> 070-0695005</p>
+                <p><strong>📧 E-post:</strong> MonteraNu@gmail.com</p>
+                <p><strong>📍 Område:</strong> Stockholm</p>
+            </div>
+
+            <div class="mt-8 space-x-4">
+                <a href="tel:0700695005" 
+                class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-200">
+                    Ring nu
+                </a>
+
+                <a href="mailto:MonteraNu@gmail.com?subject=Bokning%20av%20tid" 
+                class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-200">
+                    Maila oss
+                </a>
+
+                <a href="https://wa.me/46700695005" target="_blank"
+                class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-green-600 transition">
+                    WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        © 2025 MonteraNu – Alla rättigheter förbehållna
+    </footer>
+
+</body>
+</html>

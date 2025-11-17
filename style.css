@@ -1,0 +1,10 @@
+.head_style{
+    background-image: url('img/background.jpg');
+    background-size: cover; 
+}
+.back_button{
+    border: none;
+    padding: auto;
+    cursor: pointer;
+    background-image: url('img/close.jpg');
+}
